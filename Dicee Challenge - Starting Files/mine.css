@@ -1,0 +1,42 @@
+body {
+    text-align: center;
+    background-color: aquamarine;
+}
+
+.inner {
+    margin-top: 10%;
+}
+.img1 {
+    animation-name: img;
+    animation-duration: 3s;
+    position: relative;
+    animation-timing-function: ease-in-out;
+}
+.img2 {
+    animation-name: img_two;
+    animation-duration: 3s;
+    position: relative;
+    animation-timing-function: ease-in-out;
+}
+.inner h1 {
+    animation-name: head;
+    animation-duration: 1s;
+    position: relative;
+    color: red;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes img {
+    0% {right: 400px; transform: rotate(0);}
+    100% {right: 0%; transform: rotate(180);}
+}
+@keyframes  img_two {
+    0% {left: 400px; transform: rotate(0);}
+    100% {left: 0%; transform: rotate(180);}
+}
+@keyframes head{
+    0% {bottom: 200px;}
+    50%{bottom: 0px;}
+    75%{bottom: 20px;}
+    100%{bottom: 0px;}
+}
